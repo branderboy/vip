@@ -11,6 +11,10 @@
     <meta name="theme-color" content="#06B6D4">
     <link rel="canonical" href="https://vipsocio.com/">
 
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2306B6D4'/%3E%3Cpath d='M20 50 L35 50 L42 35 L58 65 L65 50 L80 50' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2306B6D4'/%3E%3Cpath d='M20 50 L35 50 L42 35 L58 65 L65 50 L80 50' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
     <!-- Open Graph -->
     <meta property="og:site_name" content="VIP Socio">
     <meta property="og:type" content="website">
@@ -262,18 +266,63 @@
                     <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-5 py-4 md:py-5">
                         <i data-lucide="map-pin" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
                         <input
+                            id="hero-city-input"
                             type="text"
-                            placeholder="City"
+                            placeholder="Detecting your city…"
+                            list="city-list"
+                            autocomplete="off"
                             class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
                         >
+                        <datalist id="city-list">
+                            <option value="Atlanta, GA"></option>
+                            <option value="Austin, TX"></option>
+                            <option value="Baltimore, MD"></option>
+                            <option value="Brooklyn, NY"></option>
+                            <option value="Chicago, IL"></option>
+                            <option value="Dallas, TX"></option>
+                            <option value="Detroit, MI"></option>
+                            <option value="Denver, CO"></option>
+                            <option value="Houston, TX"></option>
+                            <option value="Las Vegas, NV"></option>
+                            <option value="Los Angeles, CA"></option>
+                            <option value="Miami, FL"></option>
+                            <option value="Nashville, TN"></option>
+                            <option value="New York, NY"></option>
+                            <option value="Orlando, FL"></option>
+                            <option value="Philadelphia, PA"></option>
+                            <option value="Phoenix, AZ"></option>
+                            <option value="San Antonio, TX"></option>
+                            <option value="Seattle, WA"></option>
+                            <option value="Washington, DC"></option>
+                        </datalist>
                     </div>
-                    <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-5 py-4 md:py-5">
-                        <i data-lucide="layers" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
+                    <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-5 py-4 md:py-5 relative">
+                        <i data-lucide="sparkles" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
                         <input
                             type="text"
                             placeholder="Select your Vibe"
+                            list="vibe-list"
+                            autocomplete="off"
                             class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
                         >
+                        <i data-lucide="chevron-down" class="text-neutral-400 ml-2 shrink-0 w-5 h-5 stroke-[3] pointer-events-none"></i>
+                        <datalist id="vibe-list">
+                            <option value="Afrobeats"></option>
+                            <option value="Amapiano"></option>
+                            <option value="R&B"></option>
+                            <option value="Hip-Hop"></option>
+                            <option value="Day Party"></option>
+                            <option value="Rooftop"></option>
+                            <option value="Nightlife"></option>
+                            <option value="Open Mic"></option>
+                            <option value="Spoken Word"></option>
+                            <option value="Block Party"></option>
+                            <option value="Arts &amp; Culture"></option>
+                            <option value="Brunch"></option>
+                            <option value="Warehouse Rave"></option>
+                            <option value="Food &amp; Drink"></option>
+                            <option value="Networking"></option>
+                        </datalist>
                     </div>
                     <button data-heap-id="hero-search-find-vibe-click" class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-10 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
                         Find Vibe
@@ -315,25 +364,25 @@
         <div class="absolute inset-0 bg-gradient-to-r from-[#06B6D4]/10 via-transparent to-[#06B6D4]/10 pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 text-center relative">
             <p class="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-10">As Seen In</p>
-            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-20">
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
+            <div class="flex flex-nowrap justify-between items-center gap-x-6 md:gap-x-10 overflow-x-auto whitespace-nowrap">
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
                     <div class="w-3 h-3 bg-[#06B6D4] rounded-full shadow-[0_0_15px_rgba(6,182,212,0.8)]"></div>
-                    <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">Complex</span>
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-tighter uppercase">Complex</span>
                 </div>
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
-                    <span class="text-2xl md:text-3xl font-black tracking-tighter italic uppercase border-l-4 border-[#06B6D4] pl-3">Hypebeast</span>
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-tighter italic uppercase border-l-4 border-[#06B6D4] pl-3">Hypebeast</span>
                 </div>
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
-                    <span class="text-2xl md:text-3xl font-black tracking-[0.15em] uppercase">ESSENCE</span>
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-[0.15em] uppercase">ESSENCE</span>
                 </div>
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
-                    <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">VIBE<span class="text-[#06B6D4]">.</span></span>
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-tighter uppercase">VIBE<span class="text-[#06B6D4]">.</span></span>
                 </div>
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
-                    <span class="text-2xl md:text-3xl font-black tracking-tighter italic uppercase">The Fader</span>
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-tighter italic uppercase">The Fader</span>
                 </div>
-                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors">
-                    <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">REVOLT<span class="text-[#06B6D4]">.</span></span>
+                <div class="group flex items-center gap-2 text-white hover:text-[#06B6D4] transition-colors shrink-0">
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-tighter uppercase">REVOLT<span class="text-[#06B6D4]">.</span></span>
                 </div>
             </div>
         </div>
@@ -941,9 +990,14 @@
         // ---------- CITY AUTO-DETECT ----------
         const cityEl = document.getElementById('current-city');
         const shareCityName = document.getElementById('share-city-name');
+        const heroCityInput = document.getElementById('hero-city-input');
         const setCity = (name) => {
             if (cityEl) cityEl.textContent = name;
             if (shareCityName) shareCityName.textContent = name;
+            if (heroCityInput && !heroCityInput.value) {
+                heroCityInput.value = name;
+                heroCityInput.placeholder = 'Your City';
+            }
         };
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
