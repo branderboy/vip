@@ -258,9 +258,10 @@
                     <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-5 py-4 md:py-5">
                         <i data-lucide="calendar" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
                         <input
-                            type="text"
-                            placeholder="Any Date"
-                            class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
+                            id="hero-date-input"
+                            type="date"
+                            aria-label="Pick a date"
+                            class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg cursor-pointer"
                         >
                     </div>
                     <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-5 py-4 md:py-5">
@@ -268,9 +269,9 @@
                         <input
                             id="hero-city-input"
                             type="text"
+                            name="city"
                             placeholder="Detecting your city…"
                             list="city-list"
-                            autocomplete="off"
                             class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
                         >
                         <datalist id="city-list">
