@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://vipsocio.com/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Core pages -->
+    <url><loc>https://vipsocio.com/how-it-works/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/marketplace/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/influencers/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://vipsocio.com/explore/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://vipsocio.com/sell/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://vipsocio.com/create-event/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://vipsocio.com/pricing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://vipsocio.com/petition/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+    <!-- Programmatic city landing pages (US) -->
+    <url><loc>https://vipsocio.com/events/atlanta/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/new-york/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/washington-dc/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/miami/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/los-angeles/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/houston/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/chicago/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/detroit/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/dallas/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/orlando/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/austin/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://vipsocio.com/events/kenya/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+
+    <!-- Programmatic city + date -->
+    <url><loc>https://vipsocio.com/events/atlanta/today/</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/atlanta/this-weekend/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/new-york/today/</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/new-york/this-weekend/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/los-angeles/today/</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/los-angeles/this-weekend/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+
+    <!-- Programmatic city + category -->
+    <url><loc>https://vipsocio.com/events/atlanta/afrobeats/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/atlanta/day-party/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/atlanta/nightlife/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/atlanta/hip-hop/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/miami/rooftop/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/events/new-york/open-mic/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+
+    <!-- Category roots -->
+    <url><loc>https://vipsocio.com/c/afrobeats/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/c/amapiano/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/c/day-party/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/c/rnb/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/c/hip-hop/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://vipsocio.com/c/nightlife/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+</urlset>

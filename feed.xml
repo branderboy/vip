@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>VIP Socio — Culture Events Feed</title>
+        <link>https://vipsocio.com/</link>
+        <description>The integrated platform for tickets, events, influencers, merch and services built for the Culture. Fresh event drops every day.</description>
+        <language>en-us</language>
+        <atom:link href="https://vipsocio.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>Midnight Sessions: Afrobeats &amp; Amapiano — Brooklyn</title>
+            <link>https://vipsocio.com/events/midnight-sessions-brooklyn</link>
+            <description>Late-night Afrobeats and Amapiano session at The Underground. Sat, Apr 18, 10:00 PM. From $25.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Afrobeats</category>
+            <category>Nightlife</category>
+        </item>
+
+        <item>
+            <title>The Cookout: R&amp;B and BBQ — Atlanta</title>
+            <link>https://vipsocio.com/events/the-cookout-atlanta</link>
+            <description>Day party with live R&amp;B and community BBQ in Piedmont Park. Sat, Apr 18, 2:00 PM. From $40.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Day Party</category>
+            <category>R&amp;B</category>
+        </item>
+
+        <item>
+            <title>Sunday Service Day Party — Miami</title>
+            <link>https://vipsocio.com/events/sunday-service-miami</link>
+            <description>Free rooftop day party at Rooftop 74. Sun, Apr 19, 3:00 PM. Free with RSVP.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Rooftop</category>
+            <category>Day Party</category>
+        </item>
+
+        <item>
+            <title>Art &amp; Soul: Gallery Opening — Washington DC</title>
+            <link>https://vipsocio.com/events/art-and-soul-dc</link>
+            <description>Gallery opening featuring emerging Black artists at District Arts. Fri, Apr 24, 9:00 PM. From $30.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Arts &amp; Culture</category>
+        </item>
+
+        <item>
+            <title>Spoken Word: Open Mic Night — Houston</title>
+            <link>https://vipsocio.com/events/open-mic-houston</link>
+            <description>Spoken word open mic at The Hideout. Sat, Apr 25, 8:00 PM. From $15.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Open Mic</category>
+            <category>Spoken Word</category>
+        </item>
+
+        <item>
+            <title>Afrobeat Rooftop Takeover — Los Angeles</title>
+            <link>https://vipsocio.com/events/afrobeat-rooftop-la</link>
+            <description>Afrobeat rooftop takeover at Sky Lounge. Sun, Apr 26, 4:00 PM. From $35.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Afrobeats</category>
+            <category>Rooftop</category>
+        </item>
+
+        <item>
+            <title>First Friday: Block Party — Detroit</title>
+            <link>https://vipsocio.com/events/first-friday-detroit</link>
+            <description>First Friday block party in downtown Detroit. Fri, May 1, 7:00 PM. Free with RSVP.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>Block Party</category>
+        </item>
+
+        <item>
+            <title>House Music Warehouse Rave — Chicago</title>
+            <link>https://vipsocio.com/events/house-warehouse-chicago</link>
+            <description>21+ house music warehouse rave in Chicago. Sat, May 2, 11:00 PM. From $45.</description>
+            <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+            <category>House Music</category>
+            <category>Nightlife</category>
+        </item>
+
+    </channel>
+</rss>
