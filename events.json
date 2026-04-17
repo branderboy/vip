@@ -1,0 +1,163 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "VIP Socio — Upcoming Events",
+    "description": "Live feed of featured events on VIP Socio. For programmatic ingestion by partners, LLMs, and distribution platforms.",
+    "url": "https://vipsocio.com/events.json",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 8,
+    "itemListElement": [
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/midnight-sessions-brooklyn",
+            "name": "Midnight Sessions: Afrobeats & Amapiano",
+            "description": "Late-night Afrobeats and Amapiano session at The Underground in Brooklyn.",
+            "startDate": "2026-04-18T22:00",
+            "endDate": "2026-04-19T04:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "The Underground",
+                "address": {"@type": "PostalAddress", "addressLocality": "Brooklyn", "addressRegion": "NY", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "25", "priceCurrency": "USD", "availability": "https://schema.org/LimitedAvailability", "url": "https://vipsocio.com/events/midnight-sessions-brooklyn"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["afrobeats", "amapiano", "nightlife", "brooklyn"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/the-cookout-atlanta",
+            "name": "The Cookout: R&B and BBQ",
+            "description": "Day party with live R&B and community BBQ in Piedmont Park, Atlanta.",
+            "startDate": "2026-04-18T14:00",
+            "endDate": "2026-04-18T20:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "Piedmont Park",
+                "address": {"@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "40", "priceCurrency": "USD", "availability": "https://schema.org/LimitedAvailability", "url": "https://vipsocio.com/events/the-cookout-atlanta"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["r&b", "day party", "bbq", "atlanta"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/sunday-service-miami",
+            "name": "Sunday Service Day Party",
+            "description": "Free rooftop day party at Rooftop 74 in Miami.",
+            "startDate": "2026-04-19T15:00",
+            "endDate": "2026-04-19T21:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "Rooftop 74",
+                "address": {"@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://vipsocio.com/events/sunday-service-miami"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["rooftop", "day party", "miami", "free"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/art-and-soul-dc",
+            "name": "Art & Soul: Gallery Opening",
+            "description": "Gallery opening featuring emerging Black artists at District Arts, Washington DC.",
+            "startDate": "2026-04-24T21:00",
+            "endDate": "2026-04-25T01:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "District Arts",
+                "address": {"@type": "PostalAddress", "addressLocality": "Washington", "addressRegion": "DC", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "30", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://vipsocio.com/events/art-and-soul-dc"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["gallery", "art", "culture", "washington dc"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/open-mic-houston",
+            "name": "Spoken Word: Open Mic Night",
+            "description": "Spoken word open mic at The Hideout, Houston.",
+            "startDate": "2026-04-25T20:00",
+            "endDate": "2026-04-25T23:30",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "The Hideout",
+                "address": {"@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "15", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://vipsocio.com/events/open-mic-houston"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["open mic", "spoken word", "houston"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/afrobeat-rooftop-la",
+            "name": "Afrobeat Rooftop Takeover",
+            "description": "Afrobeat rooftop takeover at Sky Lounge, Los Angeles.",
+            "startDate": "2026-04-26T16:00",
+            "endDate": "2026-04-26T22:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "Sky Lounge",
+                "address": {"@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "35", "priceCurrency": "USD", "availability": "https://schema.org/LimitedAvailability", "url": "https://vipsocio.com/events/afrobeat-rooftop-la"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["afrobeats", "rooftop", "los angeles"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/first-friday-detroit",
+            "name": "First Friday: Block Party",
+            "description": "First Friday block party in downtown Detroit. Free with RSVP.",
+            "startDate": "2026-05-01T19:00",
+            "endDate": "2026-05-02T00:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "Downtown Detroit",
+                "address": {"@type": "PostalAddress", "addressLocality": "Detroit", "addressRegion": "MI", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://vipsocio.com/events/first-friday-detroit"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["block party", "detroit", "free"]
+        },
+        {
+            "@type": "Event",
+            "@id": "https://vipsocio.com/events/house-warehouse-chicago",
+            "name": "House Music Warehouse Rave",
+            "description": "21+ house music warehouse rave in Chicago.",
+            "startDate": "2026-05-02T23:00",
+            "endDate": "2026-05-03T05:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "The Warehouse",
+                "address": {"@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US"}
+            },
+            "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop",
+            "offers": {"@type": "Offer", "price": "45", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://vipsocio.com/events/house-warehouse-chicago"},
+            "organizer": {"@type": "Organization", "name": "VIP Socio"},
+            "keywords": ["house music", "warehouse", "chicago", "21+"]
+        }
+    ]
+}

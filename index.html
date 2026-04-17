@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP Socio | Find The Vibe</title>
+    <title>VIP Socio | Find The Vibe — Culture Events, Tickets & Experiences</title>
+    <meta name="description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture. Browse the hottest events in your city on VIP Socio.">
+    <meta name="keywords" content="events, tickets, concerts, parties, culture events, things to do, afrobeats, nightlife, day party, influencer events, event marketplace">
+    <meta name="author" content="VIP Socio">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#06B6D4">
+    <link rel="canonical" href="https://vipsocio.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="VIP Socio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIP Socio | Find The Vibe">
+    <meta property="og:description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture.">
+    <meta property="og:image" content="https://content-crimson-l22z5e8v7i.edgeone.app/hero44.png">
+    <meta property="og:url" content="https://vipsocio.com/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@vipsocio">
+    <meta name="twitter:title" content="VIP Socio | Find The Vibe">
+    <meta name="twitter:description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture.">
+    <meta name="twitter:image" content="https://content-crimson-l22z5e8v7i.edgeone.app/hero44.png">
+
+    <!-- Perf: preconnect critical origins -->
+    <link rel="preconnect" href="https://content-crimson-l22z5e8v7i.edgeone.app" crossorigin>
+    <link rel="dns-prefetch" href="https://content-crimson-l22z5e8v7i.edgeone.app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preconnect" href="https://api.bigdatacloud.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Alternate discovery -->
+    <link rel="alternate" type="application/rss+xml" title="VIP Socio Events Feed" href="/feed.xml">
+    <link rel="alternate" type="application/json" title="VIP Socio Events JSON" href="/events.json">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -17,7 +53,7 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-33.33%); }
         }
-        
+
         .animate-marquee {
             animation: marquee 30s linear infinite;
             display: flex;
@@ -34,9 +70,99 @@
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
         }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VIP Socio",
+        "alternateName": "VIPsocio",
+        "url": "https://vipsocio.com/",
+        "logo": "https://vipsocio.com/logo.png",
+        "description": "The integrated platform for tickets, events, influencers, merch and services built for the Culture.",
+        "sameAs": [
+            "https://twitter.com/vipsocio",
+            "https://facebook.com/vipsocio",
+            "https://instagram.com/vipsocio",
+            "https://linkedin.com/company/vipsocio",
+            "https://tiktok.com/@vipsocio"
+        ],
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+1-678-852-5440",
+            "contactType": "customer support",
+            "email": "info@vipsocio.com",
+            "areaServed": "US",
+            "availableLanguage": ["English"]
+        },{
+            "@type": "ContactPoint",
+            "telephone": "+225-056-434-2424",
+            "contactType": "customer support",
+            "email": "vipsociokenya@gmail.com",
+            "areaServed": ["CI","KE"],
+            "availableLanguage": ["English","French"]
+        }]
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite with SiteSearch -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "VIP Socio",
+        "url": "https://vipsocio.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://vipsocio.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: ItemList of featured events -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Hot This Week on VIP Socio",
+        "itemListElement": [
+            {"@type":"ListItem","position":1,"item":{"@type":"Event","name":"Midnight Sessions: Afrobeats & Amapiano","startDate":"2026-04-18T22:00","location":{"@type":"Place","name":"The Underground","address":"Brooklyn, NY"},"offers":{"@type":"Offer","price":"25","priceCurrency":"USD","availability":"https://schema.org/LimitedAvailability"}}},
+            {"@type":"ListItem","position":2,"item":{"@type":"Event","name":"The Cookout: R&B and BBQ","startDate":"2026-04-18T14:00","location":{"@type":"Place","name":"Piedmont Park","address":"Atlanta, GA"},"offers":{"@type":"Offer","price":"40","priceCurrency":"USD"}}},
+            {"@type":"ListItem","position":3,"item":{"@type":"Event","name":"Sunday Service Day Party","startDate":"2026-04-19T15:00","location":{"@type":"Place","name":"Rooftop 74","address":"Miami, FL"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+            {"@type":"ListItem","position":4,"item":{"@type":"Event","name":"Art & Soul: Gallery Opening","startDate":"2026-04-24T21:00","location":{"@type":"Place","name":"District Arts","address":"Washington, DC"},"offers":{"@type":"Offer","price":"30","priceCurrency":"USD"}}}
+        ]
+    }
+    </script>
 </head>
 <body class="bg-[#F2F0EA] text-neutral-900 selection-cyan">
+
+    <!-- Google Tag Manager (enable by replacing GTM-XXXXXXX) -->
+    <!--
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+    <!-- End Google Tag Manager -->
 
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 border-b border-neutral-100 bg-white shadow-sm">
@@ -49,19 +175,19 @@
                     <span class="text-2xl font-black tracking-tighter text-neutral-950">VIP Socio</span>
                 </div>
 
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Home</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">How It Works</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Browse Events</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">MarketPlace</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Influencer</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Explore</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Sell</a>
+                <div class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+                    <a href="/" data-heap-id="nav-home-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Home</a>
+                    <a href="/how-it-works/" data-heap-id="nav-how-it-works-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">How It Works</a>
+                    <a href="/events/" data-heap-id="nav-browse-events-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Browse Events</a>
+                    <a href="/marketplace/" data-heap-id="nav-marketplace-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">MarketPlace</a>
+                    <a href="/influencers/" data-heap-id="nav-influencer-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Influencer</a>
+                    <a href="/explore/" data-heap-id="nav-explore-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Explore</a>
+                    <a href="/sell/" data-heap-id="nav-sell-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Sell</a>
                     <div class="flex items-center gap-4 pl-4 border-l border-neutral-200">
-                        <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Log In</a>
-                        <button class="bg-neutral-950 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#06B6D4] transition-all transform hover:scale-105 shadow-xl shadow-black/10 uppercase tracking-tight">
+                        <a href="/login/" rel="nofollow" data-heap-id="nav-login-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Log In</a>
+                        <a href="/create-event/" data-heap-id="nav-create-event-click" class="bg-neutral-950 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#06B6D4] transition-all transform hover:scale-105 shadow-xl shadow-black/10 uppercase tracking-tight">
                             Create Event
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -96,8 +222,13 @@
         <div class="absolute inset-0 z-0">
             <img
                 src="https://raw.githubusercontent.com/branderboy/vip/c9afd1c552fa0ea32655ee9a8b88287cf07d93bb/public/images/hero.png"
-                alt="Vibrant event crowd"
+                alt="Vibrant VIP Socio event crowd at a cultural celebration"
                 class="w-full h-full object-cover object-[center_25%]"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                width="1920"
+                height="1080"
             >
             <div class="absolute inset-x-0 bottom-0 h-[75%] bg-gradient-to-t from-black via-black/40 to-transparent"></div>
         </div>
@@ -110,9 +241,9 @@
                     <span class="text-xs font-black text-white uppercase tracking-[0.2em]">The Pulse of the Culture</span>
                 </div>
 
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] mb-3 text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] uppercase">
+                <p class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] mb-3 text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] uppercase" role="heading" aria-level="2">
                     FIND THE VIBE.
-                </h1>
+                </p>
 
                 <p class="text-sm md:text-base lg:text-lg text-white mb-8 max-w-2xl font-bold leading-snug drop-shadow-[0_4px_10px_rgba(0,0,0,1)] uppercase tracking-tight px-4">
                     The integrated platform for <span class="text-[#06B6D4]">tickets, events, influencers, merch &amp; services</span> built for the Culture.
@@ -144,7 +275,7 @@
                             class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
                         >
                     </div>
-                    <button class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-10 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
+                    <button data-heap-id="hero-search-find-vibe-click" class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-10 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
                         Find Vibe
                     </button>
                 </div>
@@ -251,93 +382,83 @@
         </div>
     </div>
 
+    <!-- TRENDING TONIGHT STRIP -->
+    <div class="bg-neutral-950 text-white py-5 border-y border-white/10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#06B6D4] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#06B6D4]"></span>
+                </span>
+                <p class="text-[11px] md:text-xs font-black uppercase tracking-[0.25em]">
+                    Trending tonight in <span id="trending-city" class="text-[#06B6D4]">your city</span>
+                </p>
+            </div>
+            <div class="flex items-center gap-5 text-[11px] font-black uppercase tracking-widest">
+                <span class="flex items-center gap-1.5"><i data-lucide="eye" class="w-3.5 h-3.5 text-[#06B6D4]"></i><span id="trending-watchers">1,284</span> watching</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="ticket" class="w-3.5 h-3.5 text-[#06B6D4]"></i><span id="trending-sold">312</span> tickets sold this hour</span>
+                <span class="hidden md:flex items-center gap-1.5"><i data-lucide="flame" class="w-3.5 h-3.5 text-[#06B6D4]"></i>Updates every 30s</span>
+            </div>
+        </div>
+    </div>
+
     <!-- TRENDING SECTION -->
     <div class="bg-white border-y border-neutral-100">
         <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-            <div class="w-full md:w-auto">
-                <div class="flex items-center gap-2 text-[#06B6D4] font-black text-[10px] uppercase tracking-[0.2em] mb-3">
-                    <i data-lucide="zap" class="w-3.5 h-3.5 fill-[#06B6D4]"></i> Exclusive Drops
-                </div>
-                <h2 class="text-5xl md:text-6xl font-black tracking-tighter text-neutral-950 leading-none">HOT THIS WEEK</h2>
-                <p class="text-neutral-400 font-bold tracking-[0.1em] text-sm mt-4 uppercase">The community has spoken. These are the top vibes.</p>
-            </div>
-            <a href="#" class="hidden md:flex items-center gap-2 text-sm font-black text-neutral-950 hover:text-[#06B6D4] transition-all group px-6 py-3 bg-neutral-50 rounded-full">
-                EXPLORE ALL <i data-lucide="chevron-right" class="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform"></i>
-            </a>
+
+        <!-- LOCATION HEADER (SEO primary H1) -->
+        <h1 class="flex flex-wrap items-center gap-3 mb-6 text-3xl md:text-4xl font-black tracking-tighter text-neutral-950">
+            <span>Browsing events in</span>
+            <button id="city-picker" data-heap-id="homepage-city-picker-click" aria-label="Change city" class="group inline-flex items-center gap-2 text-[#06B6D4] hover:text-[#0891B2] transition-colors">
+                <i data-lucide="chevron-down" class="w-7 h-7 stroke-[3]" aria-hidden="true"></i>
+                <span id="current-city">Detecting…</span>
+            </button>
+        </h1>
+
+        <div class="flex items-center gap-3 mb-6">
+            <button id="share-city" data-heap-id="share-city-click" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-neutral-500 hover:text-[#06B6D4] transition-colors">
+                <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
+                Share <span id="share-city-name">your city</span> with your people
+            </button>
+            <span class="text-neutral-300">·</span>
+            <button id="view-saved" data-heap-id="view-saved-click" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-neutral-500 hover:text-[#06B6D4] transition-colors">
+                <i data-lucide="bookmark" class="w-3.5 h-3.5"></i>
+                Your Saved (<span id="saved-count">0</span>)
+            </button>
         </div>
 
-        <div id="trending-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-            <!-- Card 1 -->
-            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
-                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
-                    <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute top-4 left-4"><span class="bg-white text-neutral-950 text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full ring-2 ring-white/80 shadow-[0_8px_30px_rgba(255,255,255,0.35),0_0_20px_rgba(6,182,212,0.25)]">🔥 Selling Fast</span></div>
-                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">TONIGHT • 10:00 PM</p></div>
-                </div>
-                <div class="flex-1 px-3">
-                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Midnight Sessions: Afrobeats & Amapiano</h3>
-                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> The Underground, Brooklyn</div>
-                </div>
-                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
-                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $25</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">9 tickets left</span></div>
-                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">👀 84 people looking</span></div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
-                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
-                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-80 transition-opacity"></div>
-                    <div class="absolute top-4 left-4"><span class="bg-white text-neutral-950 text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full ring-2 ring-white/80 shadow-[0_8px_30px_rgba(255,255,255,0.35),0_0_20px_rgba(6,182,212,0.25)]">🚨 Almost Sold Out</span></div>
-                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">SAT, APR 18 • 2:00 PM</p></div>
-                </div>
-                <div class="flex-1 px-3">
-                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">The Cookout: R&B and BBQ</h3>
-                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> Piedmont Park, Atlanta</div>
-                </div>
-                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
-                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $40</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">Limited spots</span></div>
-                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">🎟️ 400+ going</span></div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
-                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
-                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute top-4 left-4"><span class="bg-white text-neutral-950 text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full ring-2 ring-white/80 shadow-[0_8px_30px_rgba(255,255,255,0.35),0_0_20px_rgba(6,182,212,0.25)]">💸 Free Entry</span></div>
-                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">SUN, APR 19 • 3:00 PM</p></div>
-                </div>
-                <div class="flex-1 px-3">
-                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Sunday Service Day Party</h3>
-                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> Rooftop 74, Miami</div>
-                </div>
-                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
-                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">Free with RSVP</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">RSVP closing soon</span></div>
-                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">🔥 2,100+ RSVP'd</span></div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
-                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
-                    <img src="https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute top-4 left-4"><span class="bg-white text-neutral-950 text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full ring-2 ring-white/80 shadow-[0_8px_30px_rgba(255,255,255,0.35),0_0_20px_rgba(6,182,212,0.25)]">📅 Next Weekend</span></div>
-                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">FRI, APR 24 • 9:00 PM</p></div>
-                </div>
-                <div class="flex-1 px-3">
-                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Art & Soul: Gallery Opening</h3>
-                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> District Arts, D.C.</div>
-                </div>
-                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
-                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $30</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">Early bird active</span></div>
-                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">👀 12 booked today</span></div>
-                </div>
-            </div>
+        <!-- FILTER TABS -->
+        <div id="event-tabs" role="tablist" aria-label="Filter events" class="flex flex-wrap items-center gap-8 border-b border-neutral-200 mb-10">
+            <button role="tab" data-tab="all" data-heap-id="feed-tab-all-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">All</button>
+            <button role="tab" data-tab="for-you" data-heap-id="feed-tab-for-you-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">For You</button>
+            <button role="tab" data-tab="today" data-heap-id="feed-tab-today-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">Today</button>
+            <button role="tab" data-tab="weekend" data-heap-id="feed-tab-weekend-click" aria-selected="true" class="event-tab text-base font-black text-[#06B6D4] pb-4 -mb-px border-b-2 border-[#06B6D4] transition-colors">This Weekend</button>
         </div>
+
+        <h2 id="tab-heading" class="text-4xl md:text-5xl font-black tracking-tighter text-neutral-950 leading-none mb-10">This Weekend</h2>
+
+        <div id="trending-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10"></div>
         </section>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] pointer-events-none opacity-0 translate-y-4 transition-all duration-300">
+        <div class="bg-neutral-950 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 border border-[#06B6D4]/30">
+            <i data-lucide="check-circle" class="w-5 h-5 text-[#06B6D4]"></i>
+            <span id="toast-msg" class="text-sm font-black uppercase tracking-widest">Link copied. Send it to your people.</span>
+        </div>
+    </div>
+
+    <!-- MORE LIKE THIS MODAL -->
+    <div id="more-modal" class="fixed inset-0 z-[90] hidden bg-black/70 backdrop-blur-sm p-4 overflow-y-auto" aria-hidden="true">
+        <div class="max-w-5xl mx-auto bg-white rounded-[2rem] p-6 md:p-10 my-12 relative">
+            <button id="close-more-modal" aria-label="Close" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <p class="text-[10px] font-black uppercase tracking-[0.3em] text-[#06B6D4] mb-2">More Like This</p>
+            <h3 id="more-modal-title" class="text-3xl md:text-4xl font-black tracking-tighter text-neutral-950 uppercase leading-none mb-8">In your city, same vibe</h3>
+            <div id="more-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+        </div>
     </div>
 
     <!-- HOW IT WORKS (FULL WIDTH SQUARE BG) -->
@@ -422,71 +543,370 @@
         </section>
     </div>
 
+    <!-- POPULAR CITIES -->
+    <section class="bg-white border-t border-neutral-100 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-10">
+                <p class="text-[10px] font-black uppercase tracking-[0.3em] text-[#06B6D4] mb-2">Explore</p>
+                <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-neutral-950 uppercase leading-none">Popular Cities</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-3 text-sm">
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Austin</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Abilene</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Denver</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Seattle</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Phoenix</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Albuquerque</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Detroit</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Anaheim</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Raleigh</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Baltimore</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Nashville</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Wichita</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Indianapolis</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in San Antonio</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do around Hyattsville</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Washington</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Philadelphia</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Richmond</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Alexandria</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Arlington</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Columbia</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Hampton</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Norfolk</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Allentown</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Petersburg</a>
+                <a href="#" class="text-neutral-700 hover:text-[#06B6D4] font-bold transition-colors">Things to do in Newport News</a>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start gap-16 relative">
-            
-            <div class="max-w-md text-center lg:text-left relative z-10">
-                <div class="flex items-center justify-center lg:justify-start gap-3 mb-10">
+    <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden" aria-label="VIP Socio footer">
+        <h2 class="sr-only">Site Navigation</h2>
+        <div class="max-w-7xl mx-auto relative">
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16 pb-10 border-b border-white/5">
+                <div class="flex items-center gap-3">
                     <div class="w-14 h-14 rounded-2xl bg-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#06B6D4]/40">
                         <i data-lucide="activity" class="text-white w-8 h-8 stroke-[3]"></i>
                     </div>
                     <span class="text-4xl font-black tracking-tighter text-white">VIP Socio</span>
                 </div>
-                <h3 class="text-4xl font-black mb-6 tracking-tighter uppercase leading-[0.9]">NEVER MISS <br/><span class="text-[#06B6D4]">ANOTHER DROP.</span></h3>
-                <p class="text-white mb-12 font-bold leading-relaxed text-sm uppercase tracking-wide">
-                    The app is where the real action happens. Get secret party invites before they're shared anywhere else.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
-                    <button class="bg-white text-neutral-950 font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto uppercase tracking-tighter">
-                        Download for iOS
-                    </button>
-                    <button class="bg-transparent border-2 border-white/20 hover:border-[#06B6D4] hover:text-[#06B6D4] text-white font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 w-full sm:w-auto uppercase tracking-tighter">
-                        Android App
-                    </button>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="#" class="bg-white text-neutral-950 font-black px-5 py-3 rounded-xl flex items-center gap-3 transition-all transform hover:scale-105 shadow-xl">
+                        <i data-lucide="apple" class="w-6 h-6"></i>
+                        <div class="text-left leading-none">
+                            <p class="text-[9px] uppercase tracking-widest text-neutral-500">Download on</p>
+                            <p class="text-base font-black -mt-0.5">App Store</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-white text-neutral-950 font-black px-5 py-3 rounded-xl flex items-center gap-3 transition-all transform hover:scale-105 shadow-xl">
+                        <i data-lucide="play" class="w-6 h-6 fill-[#06B6D4] text-[#06B6D4]"></i>
+                        <div class="text-left leading-none">
+                            <p class="text-[9px] uppercase tracking-widest text-neutral-500">Get it on</p>
+                            <p class="text-base font-black -mt-0.5">Google Play</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="flex gap-20 text-sm relative z-10 text-left">
-                <div class="flex flex-col gap-6">
-                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Discovery</h4>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Upcoming</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Trending</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Cities</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+
+                <!-- USE VIPSOCIO -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">Use VIPsocio</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Create Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Pricing</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Event Marketing Platform</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">VIPsocio Mobile Ticket App</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">VIPsocio Check-In App</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">VIPsocio App Marketplace</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Event Registration Software</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Community Guidelines</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">FAQs</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Sitemap</a>
                 </div>
-                <div class="flex flex-col gap-6">
-                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Impact</h4>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Partner</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Fees</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Stories</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Petition</a>
+
+                <!-- PLAN EVENTS -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">Plan Events</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Sell Tickets Online</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Performing Arts Ticketing Software</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Sell Concert Tickets Online</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Event Payment System</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Solutions for Professional Services</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Event Management Software</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Halloween Party Planning</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Virtual Events Platform</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">QR Codes for Event Check-In</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Post your event online</a>
+                </div>
+
+                <!-- FIND EVENTS -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">Find Events</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">New Orleans Food &amp; Drink Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">San Francisco Holiday Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Tulum Music Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Denver Hobby Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Atlanta Pop Music Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">New York Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Chicago Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Events in Dallas Today</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Los Angeles Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Washington Events</a>
+                </div>
+
+                <!-- CONNECT WITH US -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">Connect With Us</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Contact Support</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Contact Sales</a>
+                    <div class="flex flex-col gap-2 text-xs font-bold text-white/60 border-t border-white/10 pt-4">
+                        <a href="tel:+16788525440" class="hover:text-[#06B6D4] transition-colors">+1 (678) 852-5440</a>
+                        <a href="tel:+2250564342424" class="hover:text-[#06B6D4] transition-colors">+225 056 434 2424</a>
+                        <a href="mailto:info@vipsocio.com" class="hover:text-[#06B6D4] transition-colors">info@vipsocio.com</a>
+                        <a href="mailto:vipsociokenya@gmail.com" class="hover:text-[#06B6D4] transition-colors">vipsociokenya@gmail.com</a>
+                        <a href="mailto:Vipsocioci@gmail.com" class="hover:text-[#06B6D4] transition-colors">Vipsocioci@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" aria-label="X" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#06B6D4] flex items-center justify-center transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#06B6D4] flex items-center justify-center transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#06B6D4] flex items-center justify-center transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#06B6D4] flex items-center justify-center transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#06B6D4] flex items-center justify-center transition-colors"><i data-lucide="music-2" class="w-4 h-4"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="absolute top-0 right-0 w-96 h-96 bg-[#06B6D4] rounded-full blur-[160px] opacity-10 -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-[#06B6D4] rounded-full blur-[160px] opacity-10 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         </div>
-        
-        <div class="max-w-7xl mx-auto mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white font-black uppercase tracking-[0.2em]">
-            <p>© 2026 Vibesocio. Pure Culture. No Filler.</p>
-            <div class="flex gap-8">
-                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Terms</a>
-                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Privacy</a>
+
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col gap-6 text-[10px] text-white/70 font-bold uppercase tracking-[0.15em]">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <p class="text-white font-black">© 2026 VIPsocio</p>
+                <label class="inline-flex items-center gap-2 text-white/60">
+                    <i data-lucide="globe" class="w-3.5 h-3.5" aria-hidden="true"></i>
+                    <span class="sr-only">Select language</span>
+                    <select data-heap-id="footer-locale-select" class="bg-transparent text-white font-bold uppercase tracking-[0.15em] text-[10px] outline-none cursor-pointer hover:text-[#06B6D4]">
+                        <option value="en-us">English (US)</option>
+                        <option value="en-gb">English (UK)</option>
+                        <option value="en-ke">English (Kenya)</option>
+                        <option value="fr-ci">Français (Côte d'Ivoire)</option>
+                        <option value="es-us">Español (US)</option>
+                    </select>
+                </label>
+            </div>
+            <div class="flex flex-wrap gap-x-5 gap-y-3">
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">How It Works</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Pricing</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Contact Support</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">About</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Blog</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Help</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Careers</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Press</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Impact</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Security</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Developers</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Status</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Terms</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Privacy</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Accessibility</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Cookies</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Manage Cookie Preferences</a>
+                <a href="#" class="hover:text-[#06B6D4] transition-colors">Do Not Sell or Share My Personal Information</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+        // ============================================================
+        // VIP Socio — demo viral loops
+        // ============================================================
 
-        // Mobile Menu Toggle
+        // ---------- EVENTS DATA ----------
+        const EVENTS = [
+            { id: 'midnight-sessions-brooklyn', title: 'Midnight Sessions: Afrobeats & Amapiano', img: 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop', city: 'Brooklyn', venue: 'The Underground', date: '2026-04-18T22:00', category: 'afrobeats', price: 'From $25', stock: '9 tickets left', stockColor: 'text-red-500', stats: '👀 84 people looking' },
+            { id: 'cookout-atlanta',          title: 'The Cookout: R&B and BBQ',               img: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop', city: 'Atlanta', venue: 'Piedmont Park', date: '2026-04-18T14:00', category: 'day-party', price: 'From $40', stock: 'Limited spots', stockColor: 'text-red-500', stats: '🎟️ 400+ going' },
+            { id: 'sunday-service-miami',     title: 'Sunday Service Day Party',               img: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop', city: 'Miami', venue: 'Rooftop 74', date: '2026-04-19T15:00', category: 'rooftop', price: 'Free with RSVP', stock: 'RSVP closing soon', stockColor: 'text-red-500', stats: "🔥 2,100+ RSVP'd" },
+            { id: 'art-soul-dc',              title: 'Art & Soul: Gallery Opening',            img: 'https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=800&auto=format&fit=crop', city: 'Washington DC', venue: 'District Arts', date: '2026-04-24T21:00', category: 'arts', price: 'From $30', stock: 'Early bird active', stockColor: 'text-red-500', stats: '👀 12 booked today' },
+            { id: 'open-mic-houston',         title: 'Spoken Word: Open Mic Night',            img: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop', city: 'Houston', venue: 'The Hideout', date: '2026-04-25T20:00', category: 'open-mic', price: 'From $15', stock: 'Doors at 7:30', stockColor: 'text-neutral-500', stats: '🎟️ 60 going' },
+            { id: 'afrobeat-rooftop-la',      title: 'Afrobeat Rooftop Takeover',              img: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop', city: 'Los Angeles', venue: 'Sky Lounge', date: '2026-04-26T16:00', category: 'afrobeats', price: 'From $35', stock: '21 tickets left', stockColor: 'text-red-500', stats: '👀 142 people looking' },
+            { id: 'first-friday-detroit',     title: 'First Friday: Block Party',              img: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop', city: 'Detroit', venue: 'Downtown', date: '2026-05-01T19:00', category: 'block-party', price: 'Free with RSVP', stock: 'RSVP required', stockColor: 'text-red-500', stats: "🔥 900+ RSVP'd" },
+            { id: 'house-warehouse-chicago',  title: 'House Music Warehouse Rave',             img: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop', city: 'Chicago', venue: 'The Warehouse', date: '2026-05-02T23:00', category: 'nightlife', price: 'From $45', stock: '21+ only', stockColor: 'text-neutral-500', stats: '🎟️ 320+ going' },
+        ];
+
+        const ORIGIN = location.origin === 'null' || !location.origin ? 'https://vipsocio.com' : location.origin;
+
+        // ---------- SAVED (localStorage) ----------
+        const SAVE_KEY = 'vipsocio.saved';
+        const getSaved = () => { try { return JSON.parse(localStorage.getItem(SAVE_KEY) || '[]'); } catch { return []; } };
+        const setSaved = (arr) => localStorage.setItem(SAVE_KEY, JSON.stringify(arr));
+        const toggleSave = (id) => {
+            const s = new Set(getSaved());
+            s.has(id) ? s.delete(id) : s.add(id);
+            setSaved([...s]);
+            document.getElementById('saved-count').textContent = s.size;
+            return s.has(id);
+        };
+        const isSaved = (id) => getSaved().includes(id);
+
+        // ---------- URGENCY ----------
+        const NOW = new Date('2026-04-17T18:00');  // demo "now"
+        const dayMs = 86400000;
+        const urgencyFor = (iso) => {
+            const d = new Date(iso);
+            const diff = d - NOW;
+            if (diff < 0)              return { label: 'You missed this', tone: 'bg-neutral-200 text-neutral-900', time: null };
+            if (diff < dayMs)          return { label: 'Happening Tonight', tone: 'bg-[#06B6D4] text-white', time: d.toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'}).toUpperCase() };
+            if (diff < dayMs * 2)      return { label: 'Tomorrow', tone: 'bg-white text-neutral-950 ring-2 ring-white/80', time: d.toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'}).toUpperCase() };
+            if (diff < dayMs * 7)      return { label: 'This Week', tone: 'bg-white text-neutral-950 ring-2 ring-white/80', time: d.toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).toUpperCase() };
+            return { label: 'Upcoming', tone: 'bg-white text-neutral-950 ring-2 ring-white/80', time: d.toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).toUpperCase() };
+        };
+
+        // ---------- CARD TEMPLATE ----------
+        const cardHTML = (e, compact = false) => {
+            const u = urgencyFor(e.date);
+            const saved = isSaved(e.id);
+            const url = `${ORIGIN}/events/${e.id}`;
+            return `
+            <article class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500" data-event-id="${e.id}" data-city="${e.city}" data-category="${e.category}">
+                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
+                    <img src="${e.img}" alt="${e.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
+
+                    <div class="absolute top-4 left-4">
+                        <span class="${u.tone} text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.2)]">${u.label}</span>
+                    </div>
+
+                    <button type="button" data-action="save" data-heap-id="card-save-click" aria-label="Save event" class="card-save absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white flex items-center justify-center shadow-lg transition-all ${saved ? 'text-[#06B6D4]' : 'text-neutral-500'}">
+                        <i data-lucide="${saved ? 'bookmark-check' : 'bookmark'}" class="w-4 h-4 ${saved ? 'fill-[#06B6D4]' : ''}"></i>
+                    </button>
+
+                    <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-2">
+                        ${u.time ? `<p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">${u.time}</p>` : `<span></span>`}
+                        <div class="flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button type="button" data-action="copy" data-url="${url}" aria-label="Copy link" class="w-8 h-8 rounded-full bg-white text-neutral-950 hover:bg-[#06B6D4] hover:text-white flex items-center justify-center shadow-lg transition-colors"><i data-lucide="link" class="w-3.5 h-3.5"></i></button>
+                            <button type="button" data-action="whatsapp" data-url="${url}" data-title="${encodeURIComponent(e.title)}" aria-label="Share on WhatsApp" class="w-8 h-8 rounded-full bg-white text-neutral-950 hover:bg-[#06B6D4] hover:text-white flex items-center justify-center shadow-lg transition-colors"><i data-lucide="message-circle" class="w-3.5 h-3.5"></i></button>
+                            <button type="button" data-action="twitter" data-url="${url}" data-title="${encodeURIComponent(e.title)}" aria-label="Share on X" class="w-8 h-8 rounded-full bg-white text-neutral-950 hover:bg-[#06B6D4] hover:text-white flex items-center justify-center shadow-lg transition-colors"><i data-lucide="twitter" class="w-3.5 h-3.5"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 px-3">
+                    <h3 class="text-${compact ? 'lg' : '2xl'} font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">${e.title}</h3>
+                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> ${e.venue}, ${e.city}</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
+                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">${e.price}</span><span class="text-[9px] ${e.stockColor} font-black uppercase tracking-tighter">${e.stock}</span></div>
+                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">${e.stats}</span></div>
+                </div>
+            </article>`;
+        };
+
+        // ---------- RENDER GRID ----------
+        const grid = document.getElementById('trending-grid');
+        const renderGrid = () => {
+            grid.innerHTML = EVENTS.map(e => cardHTML(e)).join('');
+            lucide.createIcons();
+        };
+        renderGrid();
+        document.getElementById('saved-count').textContent = getSaved().length;
+
+        // ---------- TOAST ----------
+        const toast = document.getElementById('toast');
+        const toastMsg = document.getElementById('toast-msg');
+        let toastTimer;
+        const showToast = (msg) => {
+            toastMsg.textContent = msg;
+            toast.classList.remove('opacity-0', 'translate-y-4');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-4');
+                toast.classList.remove('opacity-100', 'translate-y-0');
+            }, 2400);
+        };
+
+        // ---------- MORE LIKE THIS MODAL ----------
+        const moreModal = document.getElementById('more-modal');
+        const moreGrid = document.getElementById('more-grid');
+        const moreTitle = document.getElementById('more-modal-title');
+        const openMore = (event) => {
+            const related = EVENTS.filter(e => e.id !== event.id && (e.city === event.city || e.category === event.category)).slice(0, 3);
+            if (!related.length) return;
+            moreTitle.innerHTML = `More ${event.category.replace('-', ' ')} or events in ${event.city}`;
+            moreGrid.innerHTML = related.map(e => cardHTML(e, true)).join('');
+            moreModal.classList.remove('hidden');
+            moreModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        };
+        const closeMore = () => {
+            moreModal.classList.add('hidden');
+            moreModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        };
+        document.getElementById('close-more-modal').addEventListener('click', closeMore);
+        moreModal.addEventListener('click', (e) => { if (e.target === moreModal) closeMore(); });
+
+        // ---------- CLICK DELEGATION (save/share/card-click) ----------
+        document.body.addEventListener('click', async (ev) => {
+            const btn = ev.target.closest('[data-action]');
+            if (btn) {
+                ev.stopPropagation();
+                const card = btn.closest('[data-event-id]');
+                const id = card?.dataset.eventId;
+                const event = EVENTS.find(e => e.id === id);
+                const url = btn.dataset.url;
+                const title = btn.dataset.title;
+
+                if (btn.dataset.action === 'save') {
+                    const nowSaved = toggleSave(id);
+                    const icon = btn.querySelector('i');
+                    btn.classList.toggle('text-[#06B6D4]', nowSaved);
+                    btn.classList.toggle('text-neutral-500', !nowSaved);
+                    icon.setAttribute('data-lucide', nowSaved ? 'bookmark-check' : 'bookmark');
+                    icon.classList.toggle('fill-[#06B6D4]', nowSaved);
+                    lucide.createIcons();
+                    showToast(nowSaved ? 'Saved. Catch it later.' : 'Removed from saved.');
+                    return;
+                }
+                if (btn.dataset.action === 'copy') {
+                    try {
+                        await navigator.clipboard.writeText(url);
+                        showToast('Link copied. Send it to your people.');
+                    } catch { showToast('Copy failed. Try again.'); }
+                    setTimeout(() => event && openMore(event), 600);
+                    return;
+                }
+                if (btn.dataset.action === 'whatsapp') {
+                    window.open(`https://wa.me/?text=${title}%20${encodeURIComponent(url)}`, '_blank');
+                    setTimeout(() => event && openMore(event), 300);
+                    return;
+                }
+                if (btn.dataset.action === 'twitter') {
+                    window.open(`https://twitter.com/intent/tweet?text=${title}&url=${encodeURIComponent(url)}`, '_blank');
+                    setTimeout(() => event && openMore(event), 300);
+                    return;
+                }
+            }
+            // plain card click — open "more like this"
+            const card = ev.target.closest('[data-event-id]');
+            if (card && !ev.target.closest('[data-action]') && !moreModal.contains(card)) {
+                const event = EVENTS.find(e => e.id === card.dataset.eventId);
+                event && openMore(event);
+            }
+        });
+
+        // ---------- MOBILE MENU ----------
         const menuBtn = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        let isOpen = false;
-
+        let menuOpen = false;
         menuBtn.addEventListener('click', () => {
-            isOpen = !isOpen;
-            if (isOpen) {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
                 mobileMenu.classList.remove('hidden');
                 menuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
             } else {
@@ -495,6 +915,87 @@
             }
             lucide.createIcons();
         });
+
+        // ---------- CITY AUTO-DETECT ----------
+        const cityEl = document.getElementById('current-city');
+        const trendingCityEl = document.getElementById('trending-city');
+        const shareCityName = document.getElementById('share-city-name');
+        const setCity = (name) => {
+            cityEl.textContent = name;
+            trendingCityEl.textContent = name;
+            shareCityName.textContent = name;
+        };
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                async (pos) => {
+                    try {
+                        const { latitude, longitude } = pos.coords;
+                        const res = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+                        const data = await res.json();
+                        setCity(data.city || data.locality || data.principalSubdivision || 'Your City');
+                    } catch { setCity('Your City'); }
+                },
+                () => setCity('Your City'),
+                { timeout: 5000 }
+            );
+        } else {
+            setCity('Your City');
+        }
+
+        // ---------- SHARE CITY IDENTITY ----------
+        document.getElementById('share-city').addEventListener('click', async () => {
+            const city = cityEl.textContent;
+            const url = `${ORIGIN}/events/${city.toLowerCase().replace(/\s+/g, '-')}/`;
+            const text = `${city} is popping this weekend — check what's moving on VIP Socio`;
+            if (navigator.share) {
+                try { await navigator.share({ title: `VIP Socio — ${city}`, text, url }); } catch {}
+            } else {
+                try {
+                    await navigator.clipboard.writeText(`${text} ${url}`);
+                    showToast(`${city} copied. Share it with your people.`);
+                } catch { showToast('Copy failed.'); }
+            }
+        });
+        document.getElementById('view-saved').addEventListener('click', () => {
+            const saved = getSaved();
+            if (!saved.length) { showToast('No saved events yet. Tap the bookmark icon.'); return; }
+            const savedEvents = EVENTS.filter(e => saved.includes(e.id));
+            moreTitle.textContent = 'Your Saved Events';
+            moreGrid.innerHTML = savedEvents.map(e => cardHTML(e, true)).join('');
+            moreModal.classList.remove('hidden');
+            moreModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        });
+
+        // ---------- TRENDING COUNTER (ticks up) ----------
+        const watchers = document.getElementById('trending-watchers');
+        const sold = document.getElementById('trending-sold');
+        setInterval(() => {
+            watchers.textContent = (parseInt(watchers.textContent.replace(/,/g,'')) + Math.floor(Math.random()*6+1)).toLocaleString();
+            sold.textContent = parseInt(sold.textContent) + Math.floor(Math.random()*3);
+        }, 4000);
+
+        // ---------- TABS ----------
+        const tabs = document.querySelectorAll('.event-tab');
+        const tabHeading = document.getElementById('tab-heading');
+        const headingMap = { 'all': 'All Events', 'for-you': 'For You', 'today': 'Today', 'weekend': 'This Weekend' };
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('text-[#06B6D4]', 'border-[#06B6D4]');
+                    t.classList.add('text-neutral-400', 'border-transparent');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.remove('text-neutral-400', 'border-transparent');
+                tab.classList.add('text-[#06B6D4]', 'border-[#06B6D4]');
+                tab.setAttribute('aria-selected', 'true');
+                if (tabHeading) tabHeading.textContent = headingMap[tab.dataset.tab] || 'Events';
+            });
+        });
+
+        // init icons across the page
+        lucide.createIcons();
     </script>
 </body>
 </html>
