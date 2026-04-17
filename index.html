@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP Socio | Find The Vibe</title>
+    <title>VIP Socio | Find The Vibe — Culture Events, Tickets & Experiences</title>
+    <meta name="description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture. Browse the hottest events in your city on VIP Socio.">
+    <meta name="keywords" content="events, tickets, concerts, parties, culture events, things to do, afrobeats, nightlife, day party, influencer events, event marketplace">
+    <meta name="author" content="VIP Socio">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#06B6D4">
+    <link rel="canonical" href="https://vipsocio.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="VIP Socio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIP Socio | Find The Vibe">
+    <meta property="og:description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture.">
+    <meta property="og:image" content="https://content-crimson-l22z5e8v7i.edgeone.app/hero44.png">
+    <meta property="og:url" content="https://vipsocio.com/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@vipsocio">
+    <meta name="twitter:title" content="VIP Socio | Find The Vibe">
+    <meta name="twitter:description" content="The integrated platform for tickets, events, influencers, merch and services built for the Culture.">
+    <meta name="twitter:image" content="https://content-crimson-l22z5e8v7i.edgeone.app/hero44.png">
+
+    <!-- Perf: preconnect critical origins -->
+    <link rel="preconnect" href="https://content-crimson-l22z5e8v7i.edgeone.app" crossorigin>
+    <link rel="dns-prefetch" href="https://content-crimson-l22z5e8v7i.edgeone.app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preconnect" href="https://api.bigdatacloud.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Alternate discovery -->
+    <link rel="alternate" type="application/rss+xml" title="VIP Socio Events Feed" href="/feed.xml">
+    <link rel="alternate" type="application/json" title="VIP Socio Events JSON" href="/events.json">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -17,7 +53,7 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-33.33%); }
         }
-        
+
         .animate-marquee {
             animation: marquee 30s linear infinite;
             display: flex;
@@ -34,9 +70,99 @@
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
         }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VIP Socio",
+        "alternateName": "VIPsocio",
+        "url": "https://vipsocio.com/",
+        "logo": "https://vipsocio.com/logo.png",
+        "description": "The integrated platform for tickets, events, influencers, merch and services built for the Culture.",
+        "sameAs": [
+            "https://twitter.com/vipsocio",
+            "https://facebook.com/vipsocio",
+            "https://instagram.com/vipsocio",
+            "https://linkedin.com/company/vipsocio",
+            "https://tiktok.com/@vipsocio"
+        ],
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+1-678-852-5440",
+            "contactType": "customer support",
+            "email": "info@vipsocio.com",
+            "areaServed": "US",
+            "availableLanguage": ["English"]
+        },{
+            "@type": "ContactPoint",
+            "telephone": "+225-056-434-2424",
+            "contactType": "customer support",
+            "email": "vipsociokenya@gmail.com",
+            "areaServed": ["CI","KE"],
+            "availableLanguage": ["English","French"]
+        }]
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite with SiteSearch -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "VIP Socio",
+        "url": "https://vipsocio.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://vipsocio.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: ItemList of featured events -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Hot This Week on VIP Socio",
+        "itemListElement": [
+            {"@type":"ListItem","position":1,"item":{"@type":"Event","name":"Midnight Sessions: Afrobeats & Amapiano","startDate":"2026-04-18T22:00","location":{"@type":"Place","name":"The Underground","address":"Brooklyn, NY"},"offers":{"@type":"Offer","price":"25","priceCurrency":"USD","availability":"https://schema.org/LimitedAvailability"}}},
+            {"@type":"ListItem","position":2,"item":{"@type":"Event","name":"The Cookout: R&B and BBQ","startDate":"2026-04-18T14:00","location":{"@type":"Place","name":"Piedmont Park","address":"Atlanta, GA"},"offers":{"@type":"Offer","price":"40","priceCurrency":"USD"}}},
+            {"@type":"ListItem","position":3,"item":{"@type":"Event","name":"Sunday Service Day Party","startDate":"2026-04-19T15:00","location":{"@type":"Place","name":"Rooftop 74","address":"Miami, FL"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+            {"@type":"ListItem","position":4,"item":{"@type":"Event","name":"Art & Soul: Gallery Opening","startDate":"2026-04-24T21:00","location":{"@type":"Place","name":"District Arts","address":"Washington, DC"},"offers":{"@type":"Offer","price":"30","priceCurrency":"USD"}}}
+        ]
+    }
+    </script>
 </head>
 <body class="bg-[#F2F0EA] text-neutral-900 selection-cyan">
+
+    <!-- Google Tag Manager (enable by replacing GTM-XXXXXXX) -->
+    <!--
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+    <!-- End Google Tag Manager -->
 
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 border-b border-neutral-100 bg-white shadow-sm">
@@ -49,19 +175,19 @@
                     <span class="text-2xl font-black tracking-tighter text-neutral-950">VIP Socio</span>
                 </div>
 
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Home</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">How It Works</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Browse Events</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">MarketPlace</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Influencer</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Explore</a>
-                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Sell</a>
+                <div class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+                    <a href="/" data-heap-id="nav-home-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Home</a>
+                    <a href="/how-it-works/" data-heap-id="nav-how-it-works-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">How It Works</a>
+                    <a href="/events/" data-heap-id="nav-browse-events-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Browse Events</a>
+                    <a href="/marketplace/" data-heap-id="nav-marketplace-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">MarketPlace</a>
+                    <a href="/influencers/" data-heap-id="nav-influencer-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Influencer</a>
+                    <a href="/explore/" data-heap-id="nav-explore-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Explore</a>
+                    <a href="/sell/" data-heap-id="nav-sell-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Sell</a>
                     <div class="flex items-center gap-4 pl-4 border-l border-neutral-200">
-                        <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Log In</a>
-                        <button class="bg-neutral-950 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#06B6D4] transition-all transform hover:scale-105 shadow-xl shadow-black/10 uppercase tracking-tight">
+                        <a href="/login/" rel="nofollow" data-heap-id="nav-login-click" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Log In</a>
+                        <a href="/create-event/" data-heap-id="nav-create-event-click" class="bg-neutral-950 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#06B6D4] transition-all transform hover:scale-105 shadow-xl shadow-black/10 uppercase tracking-tight">
                             Create Event
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -96,8 +222,13 @@
         <div class="absolute inset-0 z-0">
             <img
                 src="https://raw.githubusercontent.com/branderboy/vip/c9afd1c552fa0ea32655ee9a8b88287cf07d93bb/public/images/hero.png"
-                alt="Vibrant event crowd"
+                alt="Vibrant VIP Socio event crowd at a cultural celebration"
                 class="w-full h-full object-cover object-[center_25%]"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                width="1920"
+                height="1080"
             >
             <div class="absolute inset-x-0 bottom-0 h-[75%] bg-gradient-to-t from-black via-black/40 to-transparent"></div>
         </div>
@@ -110,9 +241,9 @@
                     <span class="text-xs font-black text-white uppercase tracking-[0.2em]">The Pulse of the Culture</span>
                 </div>
 
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] mb-3 text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] uppercase">
+                <p class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] mb-3 text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] uppercase" role="heading" aria-level="2">
                     FIND THE VIBE.
-                </h1>
+                </p>
 
                 <p class="text-sm md:text-base lg:text-lg text-white mb-8 max-w-2xl font-bold leading-snug drop-shadow-[0_4px_10px_rgba(0,0,0,1)] uppercase tracking-tight px-4">
                     The integrated platform for <span class="text-[#06B6D4]">tickets, events, influencers, merch &amp; services</span> built for the Culture.
@@ -144,7 +275,7 @@
                             class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
                         >
                     </div>
-                    <button class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-10 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
+                    <button data-heap-id="hero-search-find-vibe-click" class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-10 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
                         Find Vibe
                     </button>
                 </div>
@@ -255,21 +386,21 @@
     <div class="bg-white border-y border-neutral-100">
         <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
 
-        <!-- LOCATION HEADER -->
-        <div class="flex flex-wrap items-center gap-3 mb-6">
-            <span class="text-3xl md:text-4xl font-black tracking-tighter text-neutral-950">Browsing events in</span>
-            <button id="city-picker" class="group inline-flex items-center gap-2 text-3xl md:text-4xl font-black tracking-tighter text-[#06B6D4] hover:text-[#0891B2] transition-colors">
-                <i data-lucide="chevron-down" class="w-7 h-7 stroke-[3]"></i>
+        <!-- LOCATION HEADER (SEO primary H1) -->
+        <h1 class="flex flex-wrap items-center gap-3 mb-6 text-3xl md:text-4xl font-black tracking-tighter text-neutral-950">
+            <span>Browsing events in</span>
+            <button id="city-picker" data-heap-id="homepage-city-picker-click" aria-label="Change city" class="group inline-flex items-center gap-2 text-[#06B6D4] hover:text-[#0891B2] transition-colors">
+                <i data-lucide="chevron-down" class="w-7 h-7 stroke-[3]" aria-hidden="true"></i>
                 <span id="current-city">Detecting…</span>
             </button>
-        </div>
+        </h1>
 
         <!-- FILTER TABS -->
-        <div id="event-tabs" class="flex flex-wrap items-center gap-8 border-b border-neutral-200 mb-10">
-            <button data-tab="all" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">All</button>
-            <button data-tab="for-you" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">For You</button>
-            <button data-tab="today" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">Today</button>
-            <button data-tab="weekend" class="event-tab text-base font-black text-[#06B6D4] pb-4 -mb-px border-b-2 border-[#06B6D4] transition-colors">This Weekend</button>
+        <div id="event-tabs" role="tablist" aria-label="Filter events" class="flex flex-wrap items-center gap-8 border-b border-neutral-200 mb-10">
+            <button role="tab" data-tab="all" data-heap-id="feed-tab-all-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">All</button>
+            <button role="tab" data-tab="for-you" data-heap-id="feed-tab-for-you-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">For You</button>
+            <button role="tab" data-tab="today" data-heap-id="feed-tab-today-click" aria-selected="false" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">Today</button>
+            <button role="tab" data-tab="weekend" data-heap-id="feed-tab-weekend-click" aria-selected="true" class="event-tab text-base font-black text-[#06B6D4] pb-4 -mb-px border-b-2 border-[#06B6D4] transition-colors">This Weekend</button>
         </div>
 
         <h2 id="tab-heading" class="text-4xl md:text-5xl font-black tracking-tighter text-neutral-950 leading-none mb-10">This Weekend</h2>
@@ -536,7 +667,8 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
+    <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden" aria-label="VIP Socio footer">
+        <h2 class="sr-only">Site Navigation</h2>
         <div class="max-w-7xl mx-auto relative">
 
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16 pb-10 border-b border-white/5">
@@ -637,7 +769,20 @@
         </div>
 
         <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col gap-6 text-[10px] text-white/70 font-bold uppercase tracking-[0.15em]">
-            <p class="text-white font-black">© 2026 VIPsocio</p>
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <p class="text-white font-black">© 2026 VIPsocio</p>
+                <label class="inline-flex items-center gap-2 text-white/60">
+                    <i data-lucide="globe" class="w-3.5 h-3.5" aria-hidden="true"></i>
+                    <span class="sr-only">Select language</span>
+                    <select data-heap-id="footer-locale-select" class="bg-transparent text-white font-bold uppercase tracking-[0.15em] text-[10px] outline-none cursor-pointer hover:text-[#06B6D4]">
+                        <option value="en-us">English (US)</option>
+                        <option value="en-gb">English (UK)</option>
+                        <option value="en-ke">English (Kenya)</option>
+                        <option value="fr-ci">Français (Côte d'Ivoire)</option>
+                        <option value="es-us">Español (US)</option>
+                    </select>
+                </label>
+            </div>
             <div class="flex flex-wrap gap-x-5 gap-y-3">
                 <a href="#" class="hover:text-[#06B6D4] transition-colors">How It Works</a>
                 <a href="#" class="hover:text-[#06B6D4] transition-colors">Pricing</a>
