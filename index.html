@@ -254,18 +254,25 @@
     <!-- TRENDING SECTION -->
     <div class="bg-white border-y border-neutral-100">
         <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-            <div class="w-full md:w-auto">
-                <div class="flex items-center gap-2 text-[#06B6D4] font-black text-[10px] uppercase tracking-[0.2em] mb-3">
-                    <i data-lucide="zap" class="w-3.5 h-3.5 fill-[#06B6D4]"></i> Exclusive Drops
-                </div>
-                <h2 class="text-5xl md:text-6xl font-black tracking-tighter text-neutral-950 leading-none">HOT THIS WEEK</h2>
-                <p class="text-neutral-400 font-bold tracking-[0.1em] text-sm mt-4 uppercase">The community has spoken. These are the top vibes.</p>
-            </div>
-            <a href="#" class="hidden md:flex items-center gap-2 text-sm font-black text-neutral-950 hover:text-[#06B6D4] transition-all group px-6 py-3 bg-neutral-50 rounded-full">
-                EXPLORE ALL <i data-lucide="chevron-right" class="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform"></i>
-            </a>
+
+        <!-- LOCATION HEADER -->
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+            <span class="text-3xl md:text-4xl font-black tracking-tighter text-neutral-950">Browsing events in</span>
+            <button id="city-picker" class="group inline-flex items-center gap-2 text-3xl md:text-4xl font-black tracking-tighter text-[#06B6D4] hover:text-[#0891B2] transition-colors">
+                <i data-lucide="chevron-down" class="w-7 h-7 stroke-[3]"></i>
+                <span id="current-city">Detecting…</span>
+            </button>
         </div>
+
+        <!-- FILTER TABS -->
+        <div id="event-tabs" class="flex flex-wrap items-center gap-8 border-b border-neutral-200 mb-10">
+            <button data-tab="all" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">All</button>
+            <button data-tab="for-you" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">For You</button>
+            <button data-tab="today" class="event-tab text-base font-black text-neutral-400 pb-4 -mb-px border-b-2 border-transparent hover:text-neutral-950 transition-colors">Today</button>
+            <button data-tab="weekend" class="event-tab text-base font-black text-[#06B6D4] pb-4 -mb-px border-b-2 border-[#06B6D4] transition-colors">This Weekend</button>
+        </div>
+
+        <h2 id="tab-heading" class="text-4xl md:text-5xl font-black tracking-tighter text-neutral-950 leading-none mb-10">This Weekend</h2>
 
         <div id="trending-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
             <!-- Card 1 -->
@@ -587,6 +594,45 @@
                 menuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
             }
             lucide.createIcons();
+        });
+
+        // City Auto-Detect
+        const cityEl = document.getElementById('current-city');
+        if (cityEl) {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    async (pos) => {
+                        try {
+                            const { latitude, longitude } = pos.coords;
+                            const res = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+                            const data = await res.json();
+                            cityEl.textContent = data.city || data.locality || data.principalSubdivision || 'Your City';
+                        } catch {
+                            cityEl.textContent = 'Your City';
+                        }
+                    },
+                    () => { cityEl.textContent = 'Your City'; },
+                    { timeout: 5000 }
+                );
+            } else {
+                cityEl.textContent = 'Your City';
+            }
+        }
+
+        // Event Tabs
+        const tabs = document.querySelectorAll('.event-tab');
+        const tabHeading = document.getElementById('tab-heading');
+        const headingMap = { 'all': 'All Events', 'for-you': 'For You', 'today': 'Today', 'weekend': 'This Weekend' };
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('text-[#06B6D4]', 'border-[#06B6D4]');
+                    t.classList.add('text-neutral-400', 'border-transparent');
+                });
+                tab.classList.remove('text-neutral-400', 'border-transparent');
+                tab.classList.add('text-[#06B6D4]', 'border-[#06B6D4]');
+                if (tabHeading) tabHeading.textContent = headingMap[tab.dataset.tab] || 'Events';
+            });
         });
     </script>
 </body>
