@@ -1,1 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBESOCIO | Find The Vibe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
 
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-33.33%); }
+        }
+        
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+            display: flex;
+            width: max-content;
+        }
+
+        .selection-cyan::selection {
+            background-color: #06B6D4;
+            color: white;
+        }
+
+        .glass-search {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-white text-neutral-900 selection-cyan">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-neutral-100 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2.5 cursor-pointer group">
+                    <div class="w-10 h-10 rounded-xl bg-[#06B6D4] flex items-center justify-center shadow-lg shadow-[#06B6D4]/30 group-hover:scale-110 transition-transform">
+                        <i data-lucide="activity" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter text-neutral-950">VIBESOCIO</span>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Discover</a>
+                    <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Host</a>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="text-sm font-bold text-neutral-600 hover:text-[#06B6D4] transition-colors">Log In</a>
+                        <button class="bg-neutral-950 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#06B6D4] transition-all transform hover:scale-105 shadow-xl shadow-black/10">
+                            GET ACCESS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-neutral-900">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 hidden md:hidden">
+        <div class="flex flex-col gap-6 text-xl font-medium">
+            <a href="#" class="border-b border-neutral-100 pb-4 text-neutral-900 hover:text-[#06B6D4]">Discover</a>
+            <a href="#" class="border-b border-neutral-100 pb-4 text-neutral-900 hover:text-[#06B6D4]">Host</a>
+            <a href="#" class="border-b border-neutral-100 pb-4 text-neutral-900 hover:text-[#06B6D4]">Log In</a>
+            <button class="bg-[#06B6D4] text-white px-6 py-4 rounded-xl font-bold w-full mt-4 shadow-lg shadow-[#06B6D4]/30 uppercase tracking-widest">
+                Join The Tribe
+            </button>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-6 md:pt-40 md:pb-8 overflow-hidden min-h-[90vh] flex flex-col justify-end">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://content-crimson-l22z5e8v7i.edgeone.app/hero44.png" 
+                alt="Vibrant event crowd" 
+                class="w-full h-full object-cover object-[center_30%]"
+            >
+            <div class="absolute inset-x-0 bottom-0 h-[75%] bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center mt-auto pb-10">
+            <div class="w-full max-w-5xl flex flex-col items-center">
+                
+                <div class="flex items-center gap-2 mb-4 bg-[#06B6D4]/20 backdrop-blur-md border border-[#06B6D4]/30 px-4 py-1.5 rounded-full">
+                    <i data-lucide="star" class="text-[#06B6D4] fill-[#06B6D4] w-3.5 h-3.5"></i>
+                    <span class="text-xs font-black text-white uppercase tracking-[0.2em]">The Pulse of the Culture</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] mb-4 text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] uppercase">
+                    FIND THE VIBE.
+                </h1>
+                
+                <p class="text-lg md:text-2xl lg:text-3xl text-white mb-10 max-w-full font-bold leading-tight drop-shadow-[0_4px_10px_rgba(0,0,0,1)] uppercase tracking-tight whitespace-nowrap overflow-hidden text-ellipsis px-4">
+                    step into the real events and experiences everyone is talking about.
+                </p>
+
+                <!-- SEARCH BAR -->
+                <div class="glass-search p-3 rounded-[2.5rem] flex flex-col sm:flex-row gap-2 w-full max-w-3xl shadow-2xl border border-white/30 mb-6">
+                    <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-6 py-4 md:py-5">
+                        <i data-lucide="search" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
+                        <input 
+                            type="text" 
+                            placeholder="What's the vibe?" 
+                            class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
+                        >
+                    </div>
+                    <div class="flex-1 flex items-center bg-white/95 rounded-[1.8rem] px-6 py-4 md:py-5">
+                        <i data-lucide="map-pin" class="text-[#06B6D4] mr-3 shrink-0 w-6 h-6 stroke-[3]"></i>
+                        <input 
+                            type="text" 
+                            placeholder="Where?" 
+                            class="bg-transparent border-none outline-none text-neutral-900 w-full placeholder:text-neutral-400 font-bold text-left text-lg"
+                        >
+                    </div>
+                    <button class="bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-5 px-12 rounded-[1.8rem] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.4)] sm:w-auto w-full uppercase tracking-widest text-lg">
+                        Find Vibe
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-center gap-4">
+                    <div class="flex items-center gap-2 text-neutral-300 font-black uppercase tracking-widest text-[10px] drop-shadow-md">
+                        <i data-lucide="users" class="text-[#06B6D4] w-3.5 h-3.5"></i>
+                        <span>52,104 users active in the last 24h</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-white font-black cursor-pointer hover:text-[#06B6D4] transition-all group drop-shadow-lg">
+                        See this weekend's drops <i data-lucide="chevron-right" class="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AS SEEN ON -->
+    <div class="bg-white py-12 border-b border-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-400 mb-8">Trusted by Creators at</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-30 grayscale contrast-125">
+                <span class="text-xl md:text-2xl font-black tracking-tighter italic uppercase">Complex</span>
+                <span class="text-xl md:text-2xl font-black tracking-tighter italic uppercase">Hypebeast</span>
+                <span class="text-xl md:text-2xl font-black tracking-tighter italic uppercase">Essence</span>
+                <span class="text-xl md:text-2xl font-black tracking-tighter italic uppercase">Vibe</span>
+                <span class="text-xl md:text-2xl font-black tracking-tighter italic uppercase">The Fader</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PULSE BAR -->
+    <div class="bg-[#ECFEFF] border-y border-[#CFFAFE] py-4 overflow-hidden relative">
+        <div class="animate-marquee gap-12">
+            <div class="flex items-center gap-12">
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="flame" class="w-3.5 h-3.5"></i> 1,204 tickets grabbed in the last hour
+                </p>
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Secret party drop in Brooklyn at 10pm
+                </p>
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> RSVP verified for "The Cookout"
+                </p>
+            </div>
+            <div class="flex items-center gap-12 ml-12">
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="flame" class="w-3.5 h-3.5"></i> 1,204 tickets grabbed in the last hour
+                </p>
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Secret party drop in Brooklyn at 10pm
+                </p>
+                <p class="text-[#0891B2] text-xs font-black uppercase tracking-[0.2em] inline-flex items-center gap-4 whitespace-nowrap">
+                    <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> RSVP verified for "The Cookout"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRENDING SECTION -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div class="w-full md:w-auto">
+                <div class="flex items-center gap-2 text-[#06B6D4] font-black text-[10px] uppercase tracking-[0.2em] mb-3">
+                    <i data-lucide="zap" class="w-3.5 h-3.5 fill-[#06B6D4]"></i> Exclusive Drops
+                </div>
+                <h2 class="text-5xl md:text-6xl font-black tracking-tighter text-neutral-950 leading-none">HOT THIS WEEK</h2>
+                <p class="text-neutral-400 font-bold tracking-[0.1em] text-sm mt-4 uppercase">The community has spoken. These are the top vibes.</p>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-2 text-sm font-black text-neutral-950 hover:text-[#06B6D4] transition-all group px-6 py-3 bg-neutral-50 rounded-full">
+                EXPLORE ALL <i data-lucide="chevron-right" class="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <div id="trending-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+            <!-- Card 1 -->
+            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
+                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
+                    <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute top-4 left-4"><span class="bg-red-500 text-white text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full shadow-2xl">🔥 Selling Fast</span></div>
+                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">TONIGHT • 10:00 PM</p></div>
+                </div>
+                <div class="flex-1 px-3">
+                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Midnight Sessions: Afrobeats & Amapiano</h3>
+                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> The Underground, Brooklyn</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
+                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $25</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">9 tickets left</span></div>
+                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">👀 84 people looking</span></div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
+                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute top-4 left-4"><span class="bg-orange-500 text-white text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full shadow-2xl">🚨 Almost Sold Out</span></div>
+                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">SAT, APR 18 • 2:00 PM</p></div>
+                </div>
+                <div class="flex-1 px-3">
+                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">The Cookout: R&B and BBQ</h3>
+                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> Piedmont Park, Atlanta</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
+                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $40</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">Limited spots</span></div>
+                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">🎟️ 400+ going</span></div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
+                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute top-4 left-4"><span class="bg-green-600 text-white text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full shadow-2xl">💸 Free Entry</span></div>
+                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">SUN, APR 19 • 3:00 PM</p></div>
+                </div>
+                <div class="flex-1 px-3">
+                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Sunday Service Day Party</h3>
+                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> Rooftop 74, Miami</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
+                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">Free with RSVP</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">RSVP closing soon</span></div>
+                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">🔥 2,100+ RSVP'd</span></div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="group cursor-pointer flex flex-col bg-white rounded-[2rem] p-3 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all border border-neutral-100 transform hover:-translate-y-2 duration-500">
+                <div class="relative rounded-[1.5rem] overflow-hidden aspect-[4/5] mb-6">
+                    <img src="https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute top-4 left-4"><span class="bg-blue-600 text-white text-[9px] font-black uppercase tracking-widest px-3 py-2 rounded-full shadow-2xl">📅 Next Weekend</span></div>
+                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><p class="text-white text-[10px] font-black uppercase tracking-widest leading-none bg-black/40 backdrop-blur-md px-3 py-2 rounded-lg">FRI, APR 24 • 9:00 PM</p></div>
+                </div>
+                <div class="flex-1 px-3">
+                    <h3 class="text-2xl font-black text-neutral-950 leading-[1.1] mb-2 group-hover:text-[#06B6D4] transition-colors line-clamp-2 uppercase">Art & Soul: Gallery Opening</h3>
+                    <div class="flex items-center gap-1.5 text-neutral-400 text-xs font-bold mb-5"><i data-lucide="map-pin" class="w-3 h-3"></i> District Arts, D.C.</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-6 px-3 border-t border-neutral-50">
+                    <div class="flex flex-col"><span class="font-black text-lg text-neutral-950">From $30</span><span class="text-[9px] text-red-500 font-black uppercase tracking-tighter">Early bird active</span></div>
+                    <div class="text-right"><span class="text-[10px] text-neutral-400 font-black uppercase block">👀 12 booked today</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS (FULL WIDTH SQUARE BG) -->
+    <div class="bg-orange-50/80 border-t border-neutral-50 py-24">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex flex-col items-center mb-12">
+                <p class="text-[#06B6D4] font-black uppercase tracking-[0.4em] text-xs mb-1 italic">Experience is everything</p>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-neutral-950 uppercase italic leading-none">GET IN. GO OUT.</h2>
+                <div class="w-24 h-2.5 bg-[#06B6D4] mt-4 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)]"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+                <div class="flex flex-col items-center group">
+                    <div class="relative mb-8">
+                        <div class="absolute inset-0 bg-orange-200/50 blur-2xl rounded-full transform group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="w-28 h-28 rounded-none bg-white text-[#06B6D4] flex items-center justify-center relative z-10 shadow-2xl shadow-orange-200/20 transform -rotate-3 group-hover:rotate-0 transition-all border border-orange-100">
+                            <i data-lucide="search" class="w-12 h-12 stroke-[3]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 text-neutral-950 uppercase tracking-tighter">1. Discover</h3>
+                    <p class="text-neutral-500 max-w-xs font-bold leading-relaxed text-sm">Stop looking, start finding. Our algorithm tracks the exact mood you're after so you never waste a night.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="relative mb-8">
+                        <div class="absolute inset-0 bg-orange-200/50 blur-2xl rounded-full transform group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="w-28 h-28 rounded-none bg-white text-[#06B6D4] flex items-center justify-center relative z-10 shadow-2xl shadow-orange-200/20 transform rotate-3 group-hover:rotate-0 transition-all border border-orange-100">
+                            <i data-lucide="ticket" class="w-12 h-12 stroke-[3]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 text-neutral-950 uppercase tracking-tighter">2. Secure</h3>
+                    <p class="text-neutral-500 max-w-xs font-bold leading-relaxed text-sm">Instant mobile checkout. No fees hidden in the back. Your digital pass is locked to your account instantly.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="relative mb-8">
+                        <div class="absolute inset-0 bg-orange-200/50 blur-2xl rounded-full transform group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="w-28 h-28 rounded-none bg-white text-[#06B6D4] flex items-center justify-center relative z-10 shadow-2xl shadow-orange-200/20 transform -rotate-1 group-hover:rotate-0 transition-all border border-orange-100">
+                            <i data-lucide="smartphone" class="w-12 h-12 stroke-[3]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 text-neutral-900 uppercase tracking-tighter">3. Dominate</h3>
+                    <p class="text-neutral-500 max-w-xs font-bold leading-relaxed text-sm">Skip the standard line. Show your QR code and step straight into the heart of the culture. VIP access, every time.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- EMAIL ALERT SECTION (FULL WIDTH SQUARE BG - NO GAP) -->
+    <div class="bg-[#06B6D4]/5 py-24">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex justify-center mb-6">
+                    <div class="w-20 h-20 rounded-none bg-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#06B6D4]/40 animate-bounce">
+                        <i data-lucide="bell-ring" class="text-white w-10 h-10"></i>
+                    </div>
+                </div>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-neutral-950 uppercase italic leading-none mb-6">THE CULTURE DROPS HERE.</h2>
+                <p class="text-neutral-500 font-bold mb-12 text-xl uppercase tracking-[0.1em]">Get the hottest secret events sent straight to your inbox.</p>
+                
+                <form class="grid grid-cols-1 md:grid-cols-3 gap-5" onsubmit="event.preventDefault();">
+                    <div class="relative">
+                        <i data-lucide="user" class="absolute left-6 top-1/2 -translate-y-1/2 text-[#06B6D4] w-6 h-6"></i>
+                        <input type="text" placeholder="Full Name" class="w-full bg-white border border-neutral-200 rounded-none py-6 pl-16 pr-6 text-neutral-900 placeholder:text-neutral-400 font-bold focus:outline-none focus:ring-2 focus:ring-[#06B6D4] transition-all text-lg">
+                    </div>
+                    <div class="relative">
+                        <i data-lucide="mail" class="absolute left-6 top-1/2 -translate-y-1/2 text-[#06B6D4] w-6 h-6"></i>
+                        <input type="email" placeholder="Email Address" class="w-full bg-white border border-neutral-200 rounded-none py-6 pl-16 pr-6 text-neutral-900 placeholder:text-neutral-400 font-bold focus:outline-none focus:ring-2 focus:ring-[#06B6D4] transition-all text-lg">
+                    </div>
+                    <div class="relative">
+                        <i data-lucide="map-pin" class="absolute left-6 top-1/2 -translate-y-1/2 text-[#06B6D4] w-6 h-6"></i>
+                        <input type="text" placeholder="Your City" class="w-full bg-white border border-neutral-200 rounded-none py-6 pl-16 pr-6 text-neutral-900 placeholder:text-neutral-400 font-bold focus:outline-none focus:ring-2 focus:ring-[#06B6D4] transition-all text-lg">
+                    </div>
+                    <div class="md:col-span-3 mt-4">
+                        <button type="submit" class="w-full bg-[#06B6D4] hover:bg-[#0891B2] text-white font-black py-7 rounded-none transition-all transform hover:scale-[1.02] active:scale-95 shadow-[0_0_50px_rgba(6,182,212,0.4)] uppercase tracking-widest text-2xl">
+                            ACTIVATE VIBE ALERTS
+                        </button>
+                        <p class="text-[11px] text-neutral-400 mt-6 font-black uppercase tracking-[0.3em]">No spam. Only drops. Unsubscribe anytime.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start gap-16 relative">
+            
+            <div class="max-w-md text-center lg:text-left relative z-10">
+                <div class="flex items-center justify-center lg:justify-start gap-3 mb-10">
+                    <div class="w-14 h-14 rounded-2xl bg-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#06B6D4]/40">
+                        <i data-lucide="activity" class="text-white w-8 h-8 stroke-[3]"></i>
+                    </div>
+                    <span class="text-4xl font-black tracking-tighter text-white">VIBESOCIO</span>
+                </div>
+                <h3 class="text-4xl font-black mb-6 tracking-tighter uppercase leading-[0.9]">NEVER MISS <br/><span class="text-[#06B6D4]">ANOTHER DROP.</span></h3>
+                <p class="text-white mb-12 font-bold leading-relaxed text-sm uppercase tracking-wide">
+                    The app is where the real action happens. Get secret party invites before they're shared anywhere else.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+                    <button class="bg-white text-neutral-950 font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto uppercase tracking-tighter">
+                        Download for iOS
+                    </button>
+                    <button class="bg-transparent border-2 border-white/20 hover:border-[#06B6D4] hover:text-[#06B6D4] text-white font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 w-full sm:w-auto uppercase tracking-tighter">
+                        Android App
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex gap-20 text-sm relative z-10 text-left">
+                <div class="flex flex-col gap-6">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Discovery</h4>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Upcoming</a>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Trending</a>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Cities</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Impact</h4>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Partner</a>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Fees</a>
+                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Stories</a>
+                </div>
+            </div>
+
+            <div class="absolute top-0 right-0 w-96 h-96 bg-[#06B6D4] rounded-full blur-[160px] opacity-10 -translate-y-1/2 translate-x-1/2"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white font-black uppercase tracking-[0.2em]">
+            <p>© 2026 Vibesocio. Pure Culture. No Filler.</p>
+            <div class="flex gap-8">
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Terms</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                mobileMenu.classList.remove('hidden');
+                menuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
