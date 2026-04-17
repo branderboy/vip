@@ -367,26 +367,6 @@
         </div>
     </div>
 
-    <!-- TRENDING TONIGHT STRIP -->
-    <div class="bg-neutral-950 text-white py-5 border-y border-white/10 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <div class="flex items-center gap-3">
-                <span class="relative flex h-2.5 w-2.5">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#06B6D4] opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#06B6D4]"></span>
-                </span>
-                <p class="text-[11px] md:text-xs font-black uppercase tracking-[0.25em]">
-                    Trending tonight in <span id="trending-city" class="text-[#06B6D4]">your city</span>
-                </p>
-            </div>
-            <div class="flex items-center gap-5 text-[11px] font-black uppercase tracking-widest">
-                <span class="flex items-center gap-1.5"><i data-lucide="eye" class="w-3.5 h-3.5 text-[#06B6D4]"></i><span id="trending-watchers">1,284</span> watching</span>
-                <span class="flex items-center gap-1.5"><i data-lucide="ticket" class="w-3.5 h-3.5 text-[#06B6D4]"></i><span id="trending-sold">312</span> tickets sold this hour</span>
-                <span class="hidden md:flex items-center gap-1.5"><i data-lucide="flame" class="w-3.5 h-3.5 text-[#06B6D4]"></i>Updates every 30s</span>
-            </div>
-        </div>
-    </div>
-
     <!-- TRENDING SECTION -->
     <div class="bg-white border-y border-neutral-100">
         <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -918,12 +898,10 @@
 
         // ---------- CITY AUTO-DETECT ----------
         const cityEl = document.getElementById('current-city');
-        const trendingCityEl = document.getElementById('trending-city');
         const shareCityName = document.getElementById('share-city-name');
         const setCity = (name) => {
-            cityEl.textContent = name;
-            trendingCityEl.textContent = name;
-            shareCityName.textContent = name;
+            if (cityEl) cityEl.textContent = name;
+            if (shareCityName) shareCityName.textContent = name;
         };
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
@@ -967,14 +945,6 @@
             document.body.style.overflow = 'hidden';
             lucide.createIcons();
         });
-
-        // ---------- TRENDING COUNTER (ticks up) ----------
-        const watchers = document.getElementById('trending-watchers');
-        const sold = document.getElementById('trending-sold');
-        setInterval(() => {
-            watchers.textContent = (parseInt(watchers.textContent.replace(/,/g,'')) + Math.floor(Math.random()*6+1)).toLocaleString();
-            sold.textContent = parseInt(sold.textContent) + Math.floor(Math.random()*3);
-        }, 4000);
 
         // ---------- TABS ----------
         const tabs = document.querySelectorAll('.event-tab');
