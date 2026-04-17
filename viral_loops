@@ -1,0 +1,228 @@
+1. “Don’t Gate It — Spread It” Loop (Core loop)
+What happens
+
+User sees event → clicks → shares → brings new user → new user lands on same event
+
+How you build it
+
+On EVERY event card:
+
+Copy Link (primary)
+WhatsApp (secondary)
+Twitter (optional)
+
+When they click:
+
+Step 1
+Instant feedback:
+
+“Link copied. Send it to your people.”
+
+Step 2 (this is the loop trigger)
+Show 3 more events right after:
+
+“More like this”
+same city + category
+
+👉 You turn one share into multiple sessions
+
+2. “Group Decision” Loop (this one spreads fast)
+
+People don’t go to events alone.
+
+Build this:
+
+Button on event:
+
+“Send to group”
+
+When clicked:
+
+auto copies link
+opens share sheet (mobile)
+
+Then show:
+
+“Who’s going with you?”
+
+Options:
+
+“Nobody yet”
+“Waiting on replies”
+
+👉 This creates:
+
+repeated visits
+re-sharing
+decision-based loops
+3. “Trending in Your City” Loop (fake it first)
+
+Homepage section:
+
+Trending in DC tonight
+
+Don’t overthink it.
+
+Start with:
+
+most clicked
+most viewed
+most shared
+
+Then:
+
+Every click:
+
+boosts that event
+
+👉 This creates:
+
+momentum
+repeat checking behavior
+
+People come back to see:
+
+“what’s trending now”
+
+4. “Miss It = Pain” Loop
+
+This one drives urgency.
+
+On event cards:
+
+If event is soon:
+
+“Happening tonight”
+
+If passed:
+
+“You missed this”
+
+Then show:
+
+“Next one like this”
+
+👉 This creates:
+
+FOMO
+return behavior
+future engagement
+5. “City Identity” Loop (underrated)
+
+People care about their city.
+
+Every page should reinforce:
+
+“DC events”
+“DMV nightlife”
+“Atlanta popping this weekend”
+
+Then:
+
+Add:
+
+“Share DC with your people”
+
+👉 Now users aren’t sharing events
+👉 they’re sharing identity
+
+6. “Save Without Account” Loop
+
+No login. No friction.
+
+When user clicks:
+
+“Save”
+
+Store in localStorage.
+
+Then:
+
+Next visit:
+
+“Your saved events”
+
+👉 This creates:
+
+return visits
+session continuity
+behavior signals
+7. “Creator / Promoter Loop” (this is big)
+
+Give promoters a reason to push YOU.
+
+For every event page:
+
+Add:
+
+“Promote this event with Scenario”
+
+Give them:
+
+share link
+clean preview (OG tags already done)
+optional embed (later)
+
+👉 Now THEY drive traffic for you
+
+8. “Infinite Discovery” Loop (Eventbrite style)
+
+After every click:
+
+You MUST show:
+
+more events same city
+more events same category
+more events same date
+
+No dead ends.
+
+👉 This keeps:
+
+session time high
+clicks chained
+signals stacking
+9. “For You” Loop (lightweight version)
+
+Don’t overbuild.
+
+Track:
+
+last city
+last category
+
+Then:
+
+Homepage:
+
+“For You”
+
+Just reorder content.
+
+👉 Feels personal
+👉 drives repeat use
+
+10. The Real Loop (how it all connects)
+
+Here’s what you’re actually building:
+
+User lands on event
+clicks
+shares to friend
+friend lands on event
+sees related events
+clicks again
+saves or shares
+returns later
+
+That’s it.
+
+What matters most (don’t overcomplicate)
+
+If you only build 3 things:
+
+Share + copy link with feedback
+Related events after every click
+Trending section that updates
+
+That alone creates loops.
