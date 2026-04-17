@@ -424,54 +424,109 @@
 
     <!-- FOOTER -->
     <footer class="bg-[#021a24] text-white py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start gap-16 relative">
-            
-            <div class="max-w-md text-center lg:text-left relative z-10">
-                <div class="flex items-center justify-center lg:justify-start gap-3 mb-10">
-                    <div class="w-14 h-14 rounded-2xl bg-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#06B6D4]/40">
-                        <i data-lucide="activity" class="text-white w-8 h-8 stroke-[3]"></i>
+        <div class="max-w-7xl mx-auto relative">
+
+            <div class="flex items-center gap-3 mb-16">
+                <div class="w-14 h-14 rounded-2xl bg-[#06B6D4] flex items-center justify-center shadow-2xl shadow-[#06B6D4]/40">
+                    <i data-lucide="activity" class="text-white w-8 h-8 stroke-[3]"></i>
+                </div>
+                <span class="text-4xl font-black tracking-tighter text-white">VIP Socio</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 relative z-10">
+
+                <!-- CONNECT + DOWNLOAD -->
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-5">Connect With Us</h4>
+                        <div class="flex flex-col gap-3 text-sm font-bold text-white/80">
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="phone" class="w-4 h-4 text-[#06B6D4] mt-0.5 shrink-0"></i>
+                                <div>
+                                    <a href="tel:+16788525440" class="block hover:text-[#06B6D4] transition-colors">+1 (678) 852-5440</a>
+                                    <a href="tel:+2250564342424" class="block hover:text-[#06B6D4] transition-colors">+225 056 434 2424</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="mail" class="w-4 h-4 text-[#06B6D4] mt-0.5 shrink-0"></i>
+                                <div>
+                                    <a href="mailto:info@vipsocio.com" class="block hover:text-[#06B6D4] transition-colors">info@vipsocio.com</a>
+                                    <a href="mailto:vipsociokenya@gmail.com" class="block hover:text-[#06B6D4] transition-colors">vipsociokenya@gmail.com</a>
+                                    <a href="mailto:Vipsocioci@gmail.com" class="block hover:text-[#06B6D4] transition-colors">Vipsocioci@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <span class="text-4xl font-black tracking-tighter text-white">VIP Socio</span>
+                    <div>
+                        <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-5">Download App</h4>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="#" class="bg-white text-neutral-950 font-black px-5 py-3 rounded-xl flex items-center gap-3 transition-all transform hover:scale-105 shadow-xl">
+                                <i data-lucide="apple" class="w-6 h-6"></i>
+                                <div class="text-left leading-none">
+                                    <p class="text-[9px] uppercase tracking-widest text-neutral-500">Download on</p>
+                                    <p class="text-base font-black -mt-0.5">App Store</p>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-white text-neutral-950 font-black px-5 py-3 rounded-xl flex items-center gap-3 transition-all transform hover:scale-105 shadow-xl">
+                                <i data-lucide="play" class="w-6 h-6 fill-[#06B6D4] text-[#06B6D4]"></i>
+                                <div class="text-left leading-none">
+                                    <p class="text-[9px] uppercase tracking-widest text-neutral-500">Get it on</p>
+                                    <p class="text-base font-black -mt-0.5">Google Play</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-4xl font-black mb-6 tracking-tighter uppercase leading-[0.9]">NEVER MISS <br/><span class="text-[#06B6D4]">ANOTHER DROP.</span></h3>
-                <p class="text-white mb-12 font-bold leading-relaxed text-sm uppercase tracking-wide">
-                    The app is where the real action happens. Get secret party invites before they're shared anywhere else.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
-                    <button class="bg-white text-neutral-950 font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto uppercase tracking-tighter">
-                        Download for iOS
-                    </button>
-                    <button class="bg-transparent border-2 border-white/20 hover:border-[#06B6D4] hover:text-[#06B6D4] text-white font-black px-10 py-5 rounded-2xl flex items-center gap-4 transition-all transform hover:scale-105 w-full sm:w-auto uppercase tracking-tighter">
-                        Android App
-                    </button>
+
+                <!-- ABOUT VIPSOCIO -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">About VIPsocio</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">How It Works</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Pricing</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">VIPsocio Mobile App</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">VIPsocio App Marketplace</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Sell Your Tickets</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Event Management Planning</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Music Venues &amp; Promoters</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Grow Your Small Business</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Petition</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Sitemap</a>
+                </div>
+
+                <!-- EVENTS IN -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-2">Events In</h4>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Atlanta Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Washington DC Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">New York Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Dallas Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Houston Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Los Angeles Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Chicago Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Miami Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Orlando Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Austin Events</a>
+                    <a href="#" class="text-white/80 hover:text-[#06B6D4] font-bold transition-colors text-sm">Kenya Events</a>
                 </div>
             </div>
 
-            <div class="flex gap-20 text-sm relative z-10 text-left">
-                <div class="flex flex-col gap-6">
-                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Discovery</h4>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Upcoming</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Trending</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Cities</a>
-                </div>
-                <div class="flex flex-col gap-6">
-                    <h4 class="font-black text-white uppercase tracking-widest text-[10px] mb-4 opacity-100">Impact</h4>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Partner</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Fees</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Stories</a>
-                    <a href="#" class="text-white hover:text-[#06B6D4] font-black transition-colors uppercase tracking-tight text-lg">Petition</a>
-                </div>
-            </div>
-
-            <div class="absolute top-0 right-0 w-96 h-96 bg-[#06B6D4] rounded-full blur-[160px] opacity-10 -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-[#06B6D4] rounded-full blur-[160px] opacity-10 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         </div>
         
-        <div class="max-w-7xl mx-auto mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white font-black uppercase tracking-[0.2em]">
-            <p>© 2026 Vibesocio. Pure Culture. No Filler.</p>
-            <div class="flex gap-8">
-                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Terms</a>
-                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Privacy</a>
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col gap-6 text-[10px] text-white font-black uppercase tracking-[0.2em]">
+            <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">About Us</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Fees</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Event Organizer</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Digital Marketing</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Marketplace</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Blog</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Petition</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Terms Of Services</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">List Your Business</a>
+                <a href="#" class="text-white hover:text-[#06B6D4] transition-colors">Privacy Policy</a>
             </div>
+            <p class="text-white/60 text-center md:text-left normal-case tracking-normal font-bold text-[11px]">© copyright by 2026. All rights reserved. Designed and developed by <a href="https://vipsocio.com" class="text-[#06B6D4] hover:underline">VIPsocio.com</a></p>
         </div>
     </footer>
 
